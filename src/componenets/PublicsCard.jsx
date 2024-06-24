@@ -23,7 +23,7 @@ export default function PublicsMainCards() {
         
 
   return (
-    <div className='grid box grid-cols-12 grid-rows-6 lg:grid-rows-2 h-[650px] lg:h-[400px] gap-3 p-3'>
+    <div className='grid box grid-cols-12 lg:grid-rows-2 h-[350px] lg:h-[400px] gap-3 p-3'>
         <div className="big-public-card card opacity-0 scale-90 grid grid-col-12 row-end-4">
             <img src="https://storage.kun.uz/source/thumbnails/_medium/10/cHvlSYjGyMrp7cH63Ug-AXvc5wv7JsRs_medium.jpg" alt=""
                 className='h-full w-full object-cover col-start-1 col-end-10' />

@@ -46,12 +46,12 @@ export default function Publics() {
   }, [])
 
   return (
-      <div className='text-zinc-900 h-[100vh] px-10 md:px-16 pt-5'>
-        <h1 className='py-5 text-4xl text-blue poppins-bold'>Publikatsiyalar</h1>
+      <div className='text-zinc-900 h-[100vh] px-5 md:px-10 pt-5'>
+        <h1 className='pt-5 text-4xl text-blue poppins-bold'>Publikatsiyalar</h1>
         <PublicsMainCards/>
             <div>
               <h1 className='py-5 text-4xl text-blue poppins-bold'>Kommentariyalar</h1>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="py-5 grid md:grid-cols-2 gap-4">
                     {comments.map(comment => (
                         <CommentsCard comment={comment} className={"card opacity-0 translate-y-24"}/>
                     ))}

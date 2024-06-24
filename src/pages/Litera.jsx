@@ -26,8 +26,8 @@ export default function Literatures() {
         <header className="text-2xl text-blue md:text-3xl py-5 poppins-medium">Ádebiyatlar</header> 
         <div className="flex flex-col md:flex-row w-full py-5 items-center gap-5">
           <div className="flex-center w-full gap-3">
-            {categories.map(category => (
-              <div className="categories-component">{category}</div>
+            {categories.map((category, index) => (
+              <div className={`categories-component flex-center ${index === 0 && "min-w-[150px]"}`}>{category}</div>
             ))}
           </div>
           <form action="Post" className='items-center justify-end gap-2 w-full md:w-1/2 flex'>
@@ -46,7 +46,7 @@ export default function Literatures() {
             </form>
           </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 ">
+      <div className="grid lg:grid-cols-3 gap-5 ">
         {length.map((_, index) => (
           <LiteratureCard className={'card opacity-0 translate-y-24'}/>
         ))}
