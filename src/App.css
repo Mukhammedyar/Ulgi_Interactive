@@ -1,0 +1,11 @@
+.login-icon {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.get-start-button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.get-start-button:hover > .login-icon {
+  opacity: 1;
+}
