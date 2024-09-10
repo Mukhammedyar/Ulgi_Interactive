@@ -9,7 +9,6 @@ import Publics from './pages/Publics'
 import SendQuestion from './pages/SendQuestion'
 
 export default function App() {
-
   
   return (
     <div className='bg-white text-white'>

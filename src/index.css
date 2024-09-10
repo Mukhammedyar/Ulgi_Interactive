@@ -18,7 +18,7 @@
     @apply px-5 md:px-16 lg:px-20;
   }
   .navbar-box {
-    @apply flex poppins-regular items-center justify-between h-20 border-b-[1px] border-b-zinc-200;
+    @apply flex poppins-regular items-center justify-between h-16 md:h-20 border-b-[1px] border-b-zinc-200;
   }
   .logo {
     @apply w-20 flex flex-col font-extrabold poppins-extrabold text-2xl;
@@ -33,7 +33,7 @@
     @apply text-zinc-600 hover:text-zinc-900 cursor-pointer font-medium transition-all opacity-0;
   }
   .mobile-sidebar {
-    @apply w-1/2 z-10 h-[80vh] md:hidden flex-col px-2 py-4 absolute top-20 right-0 translate-x-[120%] bottom-0 bg-zinc-50;
+    @apply w-1/2 z-10 h-[80vh] md:hidden flex-col px-2 py-4 absolute top-16 right-0 translate-x-[120%] bottom-0 bg-zinc-50;
   }
   .search-button {
     @apply rounded-full bg-white p-2;
@@ -42,7 +42,7 @@
     @apply border-[1px] border-zinc-300 focus:ring-0 ring-0 focus:outline-none rounded-full  px-3 h-12;
   }
   .categories-component {
-    @apply px-3 py-2 bg-white text-sm lg:text-lg border-[1px] rounded-full cursor-pointer hover:bg-zinc-100 transition-all;
+    @apply px-3 py-2 bg-white text-lg  lg:text-lg border-[1px] rounded-full cursor-pointer hover:bg-zinc-100 transition-all;
   }
   .big-public-card {
     @apply col-start-1 col-end-13 lg:col-end-9 bg-light-blue overflow-hidden rounded-lg row-start-1 lg:row-end-3;

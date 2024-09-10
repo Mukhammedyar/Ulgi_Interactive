@@ -4,7 +4,7 @@ import html2canvas from 'html2canvas';
 import React, { useRef, useState } from 'react'
 import { handleDownload, handleShare } from '../Utils/ShareUtils';
 
-export default function CardBox() {
+export default function CardBox({description, type, value}) {
   const cardRef = useRef(null);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
@@ -23,20 +23,20 @@ export default function CardBox() {
   return (
   <div ref={cardRef} className='p-3'>
     <CardContent >
-      <p className="text-sm text-zinc-600">Word of the Day</p>
+      <p className="text-sm text-zinc-600">Izlew nátiyjesi</p>
       <p className="text-2xl poppins-normal text-zinc-800">
-        be{bull}nev{bull}o{bull}lent
+        {value} 
       </p>
-      <p className="text-md mb-5 text-zinc-600 italic">adjective</p>
+      <p className="text-md mb-5 text-zinc-600 italic">{type}</p>
         <p className='text-sm'>
-            well meaning and kindly.
+          {description}
             <br />
-            {'"a benevolent smile"'}
+            {"buyım yamasa zatqa qollanıladı"}
         </p>
     </CardContent>
     <div className="flex items-center justify-between px-3">
       <CardActions>
-        <button size="small" className=' text-blue'>Learn More</button>
+        <button size="small" className=' text-blue'>Kóbirek oqıw </button>
       </CardActions>
         <div className="flex-center">
           <IconButton aria-label="download" onClick={()=> handleDownload(cardRef)}>
