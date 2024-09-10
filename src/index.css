@@ -70,9 +70,14 @@
   }
 }
 .header {
-  background-image: url("../public/162_04.jpg");
+  background-image: none;
+  background-color: #f0f0f0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header.loaded {
+  background-image: url("../public/162_04.jpg");
 }
 .text {
   transform: translateY(100px);

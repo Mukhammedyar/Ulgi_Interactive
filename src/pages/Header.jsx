@@ -3,11 +3,12 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SearchIcon } from '../Utils/icons'
 import Cards from './Cards'
+import useImageOnload from '../hooks/useImageOnload'
 
 export default function Header() {
     const [value, setValue] = useState('')
     const resultSectionRef = useRef(null);
-
+    const isLoaded = useImageOnload()
     useGSAP(() => {
         
         gsap.fromTo('.text',
@@ -88,7 +89,7 @@ export default function Header() {
 
   return (
     <div>
-        <section id='Header' className='header -mt-20 text-zinc-800 flex-center flex-col md:container-box w-full h-[90vh] md:h-[95vh]'>
+        <section id='Header' className={`${isLoaded ? "loaded" : ""} header -mt-20 text-zinc-800 flex-center flex-col md:container-box w-full h-[90vh] md:h-[95vh] ${isLoaded ? 'bg-cover' : 'bg-none'}`}>
             <h1 className="text-3xl md:text-5xl lg:text-5xl text-center px-5 header-text poppins-bold">
                     <span className='text'>«Úlgi» </span>
                     <span className='text'>joybarı </span>
